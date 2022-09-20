@@ -15,9 +15,11 @@
           officiis.
         </p>
         <a href="#"
-           class="mt-4 inline-block px-5 py-3 bg-indigo-600  uppercase text-white text-xs font-semibold rounded-lg sm:mt-8 sm:py-4 sm:text-base lg:mt-6">Book
+           class="btn btn-indigo">Book
           your
           escape</a>
+        <a href="#"
+           class="ml-3 btn btn-gray normal-case text-lg">Learn more</a>
       </div>
       <div class="hidden relative lg:block lg:w-1/2">
         <img class="inset-0 h-full object-cover object-center"
