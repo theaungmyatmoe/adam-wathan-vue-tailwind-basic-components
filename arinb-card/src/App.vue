@@ -15,7 +15,7 @@ const property = {
 </script>
 
 <template>
-  <main class="antialiased text-gray-900 bg-gray-300 min-h-screen flex justify-center items-center ">
+  <main class="antialiased text-gray-900 bg-gray-300 min-h-screen grid place-items-center ">
     <PropertyCard :property="property"/>
   </main>
 </template>
