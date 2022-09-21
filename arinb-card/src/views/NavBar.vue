@@ -3,14 +3,16 @@ let isOpen = $ref(false)
 </script>
 
 <template>
-  <header class="bg-gray-900 sm:flex sm:justify-between sm:items-center">
+  <header
+      class="sticky  top-0 bg-gray-900 backdrop-filter bg-opacity-90 backdrop-blur-sm sm:flex sm:justify-between sm:items-center ">
     <div class="flex justify-between items-center  px-4 py-3">
       <div>
         <img class="h-8" src="../assets/logo-inverted.svg" alt="">
       </div>
       <div class="sm:hidden">
+        <!--        nav toggler -->
         <button
-            class="transition-colors h-8 text-gray-400 outline-none border px-1 py-.5 border-gray-600 rounded hover:text-gray-100 hover:border-gray-400"
+            class="transition-colors h-8 px-1 text-gray-400 outline-none border border-gray-600 rounded hover:text-gray-100 hover:border-gray-400"
             @click="isOpen = !isOpen"
         >
           <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
