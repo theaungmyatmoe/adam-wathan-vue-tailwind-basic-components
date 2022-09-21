@@ -35,7 +35,28 @@ let isOpen = $ref(false)
       <a href="#" class="transition-colors text-gray-100 px-2.5 py-2 rounded-lg hover:bg-gray-800">Messages</a>
       <a href="#" class="transition-colors text-gray-100 px-2.5 py-2 rounded-lg hover:bg-gray-800">Contact Us</a>
       <a href="#" class="transition-colors text-gray-100 px-2.5 py-2 rounded-lg hover:bg-gray-800">Contact Us</a>
-      <DropDown/>
+      <!--      account dropdown for desktop-->
+      <DropDown class="hidden sm:block"/>
+
+      <div class="mt-2 p-2 py-4  border-t border-gray-700 sm:hidden">
+        <button class="mx-2">
+          <img
+              class=" w-8 h-8  border-2 border-gray-500 rounded-full object-cover object-center"
+              src="https://images.unsplash.com/photo-1532074205216-d0e1f4b87368?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=441&q=80"
+              alt="Girl who's looking to the right side">
+        </button>
+        <!--        account setting -->
+        <div v-if="isOpen" class="flex flex-col">
+          <a class="transition-colors duration-300 px-2 py-2 text-gray-100 hover:bg-gray-800 hover:text-white rounded-lg"
+             href="#">Account
+            setting</a>
+          <a class="transition-colors duration-300 px-2 py-2 text-gray-100 hover:bg-gray-800 hover:text-white rounded-lg"
+             href="#">Messages</a>
+          <a class="transition-colors duration-300 px-2 py-2 text-gray-100 hover:bg-gray-800 hover:text-white rounded-lg"
+             href="#">Logout</a>
+        </div>
+      </div>
+
     </div>
   </header>
 </template>
