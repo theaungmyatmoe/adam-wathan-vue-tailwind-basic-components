@@ -1,8 +1,9 @@
 <template>
-  <main class="min-h-screen px-20 py-20 bg-gray-400">
-    <DropDown/>
+  <main>
+    <NavBar/>
   </main>
 </template>
 
 <script setup>
-import DropDown from "./components/DropDown.vue";</script>
+import DropDown from "./components/DropDown.vue";
+import NavBar from "./views/NavBar.vue";</script>

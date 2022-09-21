@@ -1,10 +1,12 @@
 <script setup>
+import DropDown from '../components/DropDown.vue'
+
 let isOpen = $ref(false)
 </script>
 
 <template>
   <header
-      class="sticky  top-0 bg-gray-900 backdrop-filter bg-opacity-90 backdrop-blur-sm sm:flex sm:justify-between sm:items-center ">
+      class="sticky  top-0 bg-gray-900 backdrop-filter bg-opacity-90 backdrop-blur-sm sm:flex sm:justify-between sm:items-center sm:px-10 ">
     <div class="flex justify-between items-center  px-4 py-3">
       <div>
         <img class="h-8" src="../assets/logo-inverted.svg" alt="">
@@ -28,11 +30,12 @@ let isOpen = $ref(false)
     <!-- mobile menu -->
     <div
         :class="isOpen ? 'flex': 'hidden'"
-        class="px-2 pt-2 flex pb-4 flex-col sm:flex sm:flex-row"
+        class="px-2 pt-2 flex pb-4 flex-col sm:flex sm:flex-row sm:gap-x-4 sm:items-center"
     >
       <a href="#" class="transition-colors text-gray-100 px-2.5 py-2 rounded-lg hover:bg-gray-800">Messages</a>
       <a href="#" class="transition-colors text-gray-100 px-2.5 py-2 rounded-lg hover:bg-gray-800">Contact Us</a>
       <a href="#" class="transition-colors text-gray-100 px-2.5 py-2 rounded-lg hover:bg-gray-800">Contact Us</a>
+      <DropDown/>
     </div>
   </header>
 </template>
